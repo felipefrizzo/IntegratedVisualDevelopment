@@ -272,6 +272,10 @@ namespace ExemploCRUD
                    MessageBoxButtons.OK,
                    MessageBoxIcon.Information
                 );
+            } finally
+            {
+                connection.Close();
+                TbPesquisar.Text = String.Empty;
             }
         }
     }
